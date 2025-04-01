@@ -12,7 +12,6 @@ RESULTS_DIR = Path("results")
 CONFUSION_MATRIX_DIR = RESULTS_DIR / "confusion_matrices"
 LOSS_CURVE_DIR = RESULTS_DIR / "loss_curves"
 
-# Ensure directories exist
 CONFUSION_MATRIX_DIR.mkdir(parents=True, exist_ok=True)
 LOSS_CURVE_DIR.mkdir(parents=True, exist_ok=True)
 
