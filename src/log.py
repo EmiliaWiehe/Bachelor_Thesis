@@ -45,7 +45,7 @@ def save_loss_curve(train_losses, val_losses, run_name):
     Returns the file path for logging.
     """
     if not train_losses or not val_losses:
-        print("⚠️ Warning: Empty loss lists received. Skipping loss curve saving.")
+        print("Warning: Empty loss lists received. Skipping loss curve saving.")
         return 
 
     plt.figure()
@@ -61,7 +61,7 @@ def save_loss_curve(train_losses, val_losses, run_name):
     plt.savefig(output_path)
     plt.close()
 
-    print(f"✅ Loss curve saved to {output_path}")
+    print(f"Loss curve saved to {output_path}")
     
     return str(output_path) 
 
