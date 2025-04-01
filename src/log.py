@@ -34,7 +34,7 @@ def save_confusion_matrix(true_labels, predicted_labels, class_names, class_name
     plt.close()
     print(f"Confusion matrix saved to {output_path}")
     
-    return str(output_path)  # ✅ Now returns the file path
+    return str(output_path)  
 
 
 
@@ -47,7 +47,7 @@ def save_loss_curve(train_losses, val_losses, run_name):
     """
     if not train_losses or not val_losses:
         print("⚠️ Warning: Empty loss lists received. Skipping loss curve saving.")
-        return None  # ✅ Avoid returning an invalid path
+        return 
 
     plt.figure()
     plt.plot(train_losses, label="Training Loss")
@@ -64,7 +64,7 @@ def save_loss_curve(train_losses, val_losses, run_name):
 
     print(f"✅ Loss curve saved to {output_path}")
     
-    return str(output_path)  # ✅ Ensure it returns a string
+    return str(output_path) 
 
 
 
