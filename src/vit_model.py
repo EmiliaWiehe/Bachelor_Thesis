@@ -31,7 +31,7 @@ def build_vit_model(num_classes=4, pretrained=True, multi_label=False):
             self.classifier = nn.Sequential(
                 nn.Linear(vit.config.hidden_size, 512),
                 nn.ReLU(),
-                nn.Dropout(0.5),
+                nn.Dropout(0.4),
                 nn.Linear(512, num_classes)
             )
 
